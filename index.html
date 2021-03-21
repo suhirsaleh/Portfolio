@@ -1,54 +1,251 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="stylesheet" href="../Portfolio/index.css">
-  <title>Document</title>
+    <!-- ===== SWIPER CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
+    <!-- ===== BOX ICONS ===== -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ===== Fontawsome ICONS ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="../Portfolio/style.css">
+
+    <title>Portfolio</title>
 </head>
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Suhir Saleh</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" href="contact.html">Contact<span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="portfolio.html">Portfolio</a>
-        <a class="nav-link" href="index.html">About</a>
-      </div>
-    </div>
-  </nav>
-</header>
 
 <body>
+    <!--===== SCROLL TOP =====-->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
 
-  <div class="outer">
-    <div class="container">
-      <h1> ABOUT ME </h1>
+    <!--===== HEADER =====-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container" id="navbar">
+            <a href="#" class="nav__logo">Suhir Saleh</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="#home" class="nav__link active--link">Home</a></li>
+                    <li class="nav__item"> <a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"> <a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"> <a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
 
-      <hr>
-      <img src="../Portfolio/Assets/suhir.jpg" width="250" height="300" class="align-self-start mr-3" alt="...">
+    <main class="l-main">
+
+        <!--===== HOME =====-->
+        <section class="home" id="home">
+            <div class="home__container bd-container bd-grid">
+                <div class="home__data">
+                    <span class="home__greeting">Hello, My Name is</span>
+                    <h1 class="home__name">Suhir Saleh</h1>
+                    <span class="home__professional">Web Developer</span>
+                </div>
 
 
-      <br>
-      <P>
-        Qualified and highly motivated certified professional with 6 month experience in coding though the University of
-        Minnesota coding bootcamp.
-      </P>
 
-    </div>
-
-  </div>
+                <div class="home__img">
+                    <img src="./assist/profile.JPG" alt="" class="">
+                </div>
 
 
+            </div>
+        </section>
+
+
+
+        <!--===== ABOUT =====-->
+        <section class="about section bd-container" id="about">
+            <span class="section-subtitle">My History</span>
+            <h2 class="section-title">About Me</h2>
+            <div class="about__container bd-grid">
+                <div class="about__data bd-grid">
+                    <p class="about__desc"><span>Hello, I am <br> </span>Qualified and highly motivated certified
+                        professional with 6 month experience in coding though the University of Minnesota coding
+                        bootcamp</p>
+                    <div>
+                        <span class="about__number">6 Months</span>
+                        <span class="about__ach">Experience</span>
+                    </div>
+                    <div>
+                        <span class="about__number">3</span>
+                        <span class="about__ach">Completed Projects</span>
+                    </div>
+                </div>
+
+                <img src="./assist/face.jpg" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--===== QUALIFICATION =====-->
+        <section class="quali section bd-container">
+            <span class="section-subtitle">Education</span>
+            <h2 class="section-title">Qualification</h2>
+
+            <div class="quali__content">
+                <h2 class="quali__title">
+                    <i class='bx bx-library quali__title-icon'></i>
+                    Education
+                </h2>
+
+                <div class="bd-grid">
+                    <div class="quali__data">
+                        <h3 class="quali__area">Software Engineering Certificate</h3>
+                        <div class="quali__box">
+                            <span class="quali__work">
+                                <i class='bx bxs-book quali__icon'></i>
+                                online Learning
+                            </span>
+                            <span class="quali__work">
+                                <i class='bx bx-calendar-alt quali__icon'></i>
+                                Sep 2021 - Mar 2021
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div class="quali__data">
+                        <h3 class="quali__area">Coding Bootcamp</h3>
+                        <div class="quali__box">
+                            <span class="quali__work">
+                                <i class='bx bxs-book quali__icon'></i>
+                                Uneversity of Minnesota
+                            </span>
+                            <span class="quali__work">
+                                <i class='bx bx-calendar-alt quali__icon'></i>
+                                Sep 2021 - Mar 2021
+                            </span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+        
+
+
+        <!--===== PROJECT IN MIND =====-->
+        <section class="project section bd-container" id="projects">
+            <div class="project__container bd-grid">
+                <div class="project__data">
+                    <i class='bx bxs-chat project__icon'></i>
+                    <div>
+                        <h2 class="project__title project-tile">Project in Mind</h2>
+                        <p class="project__desc">Let's build your project and give it a life.</p>
+                    </div>
+                    <div>
+                        <a href="#" class="button button-white">Hire Me</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--===== PORTFOLIO =====-->
+        <section class="portfolio section bd-container" id="portfolio">
+            <span class="section-subtitle">My Recent Projects</span>
+            <h2 class="section-title">Portfolio</h2>
+
+            <div class="portfolio__container bd-grid">
+                <div class="portfolio__content mix web">
+                    <a href="#" class=""><img
+                            src="https://raw.githubusercontent.com/bedimcode/responsive-portfolio-Clay-Doe/main/assets/img/work1.jpg"
+                            alt="" class="portfolio__img"></a>
+                    <div class="portfolio__data">
+                        <span class="portfolio__subtitle">Web Development</span>
+                        <a href="#">
+                            <h2 class="portfolio__title">Portfolio</h2>
+                        </a>
+                        <a href="https://github.com/suhirsaleh" class="button button-link">View profile</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--===== CONTACTME =====-->
+        <section class="contact section bd-container" id="contact">
+            <span class="section-subtitle">Let's help you in your projects</span>
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact__container bd-grid">
+                <div class="contact__content bd-grid">
+                    <div class="contact__box">
+                        <i class='bx bxs-phone contact-icon'></i>
+                        <h3 class="contact__title">Phone</h3>
+                        <span class="contact__desc">651-332-9149</span>
+                    </div>
+                    <div class="contact__box">
+                        <i class='bx bxs-envelope contact-icon'></i>
+                        <h3 class="contact__title">E-mail</h3>
+                        <span class="contact__desc">suhiralisaleh@gmail.com</span>
+                    </div>
+                </div>
+                <form action="" class="contact__form">
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="email" placeholder="Email" class="contact__input">
+                    </div>
+                    <div class="contact__inputs">
+                        <input type="text" placeholder="Project" class="contact__input">
+                        <input type="number" placeholder="Phone-number" class="contact__input">
+                    </div>
+                    <textarea class="contact__input" placeholder="Message" name="" id="" cols="0" rows="7"></textarea>
+                    <div class="send__button"><input type="submit" value="Send" class="button contact__button">
+                </form>
+            </div>
+            </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <div class="footer__container bd-container">
+            <h1 class="footer__title">Suhir Saleh</h1>
+            <p class="footer__desc">I'm Suhir Saleh and this is my personal website.</p>
+
+            
+        </div>
+    </footer>
+
+    <!-- ===== MIXITUP FILTER ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+        integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.js"
+        integrity="sha512-fuxK9KrfYYxsXOm+VTYLEX3vOKymX2CDP+X1q0vsTwe9LPyJBSC3LXPu79ZNZiNCFrSzzMklmp5bU9Da/1TQEw=="
+        crossorigin="anonymous"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <!-- ===== Mixitup ===== -->
+
+    <!-- ===== SWIPER JS ===== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- ===== GSAP ===== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="../Desktop/Script.js"></script>
 
 
 
